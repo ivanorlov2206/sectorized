@@ -176,6 +176,7 @@ public class MyGdxGame extends ApplicationAdapter {
 				angle = (angle + speed);
 				if (angle <= last_ang && angle + speed > last_ang && score > 0) {
 					tmp_loose = true;
+					animStarted = true;
 				}
 				angle %= 360;
 			} else {
